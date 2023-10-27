@@ -14,7 +14,7 @@ Here, we are choosing the 64-bit version of the Node.js installer. The LTS (Long
 Step 2: Install Node.js and NPM
 just click next and next (by default), and thing will get downloaded.
 The following features will be installed by default:
-    Node.js runtime
+    Node.js runtime \n
     Npm package manager
     Online documentation shortcuts
     Add to Path
