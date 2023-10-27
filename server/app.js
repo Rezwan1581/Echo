@@ -176,6 +176,29 @@ app.post('/api/login', async (req, res) => {
     }
 });
 
+// app.post('/api/signout', async (req, res) => {
+//     try {
+//         // You need to identify the user who wants to sign out. You can do this based on user authentication.
+//         // Once you know which user wants to sign out, you can clear their token.
+//         // For example, if the user's JWT token is stored in the user's document (as you did during login), you can do:
+
+//         // Find the user based on their authentication (e.g., by checking their session or user ID)
+//         const user = await Users.findById(req.user._id);
+
+//         if (user) {
+//             // Clear the user's token
+//             user.token = null;
+//             await user.save();
+//         }
+
+//         // Respond with success message
+//         res.status(200).json({ message: 'Sign-out successful' });
+//     } catch (error) {
+//         console.error(error);
+//         res.status(500).json({ message: 'An error occurred while processing the request' });
+//     }
+// });
+
 app.post('/api/conversation', async (req, res, next) => {
 
     try {

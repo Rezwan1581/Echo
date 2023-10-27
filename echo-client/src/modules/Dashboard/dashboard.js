@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import Avatar from '../../assets/avatar2.png'
 import Input from "../../components/Input/input"
 import { io } from 'socket.io-client'
+import { useNavigate } from "react-router-dom";
 
 
 const Dashboard = () => {
@@ -30,6 +31,8 @@ const Dashboard = () => {
 
     const [socket, setSocket] = useState(null)
     const messageRef = useRef(null)
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         setSocket(io('http://localhost:8080'))
@@ -167,6 +170,56 @@ const Dashboard = () => {
             })
             .catch((error) => console.error(error));
     };
+
+    // // Function to handle user sign-out
+    // const handleSignOut = () => {
+    //     // Perform any necessary sign-out actions (e.g., clear local storage, log the user out on the server, etc.)
+    //     // Redirect to the sign-in page or any other desired behavior
+    //     // Example: Clear user data from local storage and redirect to the sign-in page
+    //     localStorage.removeItem('user:detail');
+    //     window.location.href = '/login'; // Replace with your desired redirect path
+    // };
+
+    const handleSignOut = () => {
+        // Clear the user's token and user details from local storage
+        localStorage.removeItem("user:token");
+        localStorage.removeItem("user:detail");
+
+        // Redirect to the sign-in page or any other appropriate page
+        navigate("/users/sign_in"); // You can replace this with the desired redirect URL
+
+        // You can also add an API call to the server to invalidate the token on the server-side if needed.
+    };
+
+    // // Function to handle user sign-out
+    // async function handleSignOut() {
+    //     try {
+    //         // Make a POST request to the server's sign-out route
+    //         const response = await fetch('/api/signout', {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-Type': 'application/json',
+    //                 // You might need to include the user's authentication token if applicable
+    //                 // 'Authorization': `Bearer ${userAuthToken}`
+    //             },
+    //         });
+
+    //         if (response.status === 200) {
+    //             // Sign-out was successful
+    //             console.log('Sign-out successful');
+    //             //window.location.href = '/signin';
+    //             // Redirect the user to the login page or perform any other desired action.
+    //             // For example, in React, you might use React Router: history.push('/login');
+    //         } else {
+    //             // Handle sign-out error
+    //             console.error('Sign-out failed');
+    //             // Display an error message or perform error-handling actions.
+    //         }
+    //     } catch (error) {
+    //         console.error('An error occurred:', error);
+    //         // Handle network errors or other exceptions
+    //     }
+    // }
 
 
 
@@ -418,6 +471,30 @@ const Dashboard = () => {
 
             </div>
             <div className='w-[25%] rounded-lg  h-screen shadow-lg  bg-secondary'>
+
+                {/* <div className="flex items-center justify-end p-4">
+
+                    <button onClick={handleSignOut} className="text-white bg-red-500 px-4 py-2 rounded-md">
+                        Sign Out
+                    </button>
+                </div> */}
+
+                <div className="flex items-center justify-end p-4">
+                    <a
+                        href="#"
+                        onClick={handleSignOut}
+                        className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group"
+                    >
+                        <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+                        <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+                        <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                        <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                        <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+                        <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease">
+                            Sign Out
+                        </span>
+                    </a>
+                </div>
 
                 <div className='text-primary text-2xl font-bold px-8 py-8 mt-14 '>Users</div>
 
