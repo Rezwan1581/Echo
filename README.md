@@ -46,6 +46,8 @@ it will show F:\your path name\Echo\echo-client> <br>
 
 use command<br>
   npm install <br>
+  npm install -D tailwindcss <br>
+  npx tailwind init <br>
   npm install mongodb-client <br>
   npm install socket-io-client <br>
 
