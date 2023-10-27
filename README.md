@@ -15,9 +15,9 @@ Step 2: Install Node.js and NPM
 just click next and next (by default), and thing will get downloaded.
 The following features will be installed by default:
     Node.js runtime \n
-    Npm package manager
-    Online documentation shortcuts
-    Add to Path
+    Npm package manager \n
+    Online documentation shortcuts\n
+    Add to Path\n
 
 Step 3: Check Node.js and NPM Version
 If you have a doubt whether you have installed everything correctly or not, let’s verify it with “Command Prompt”.
@@ -30,23 +30,23 @@ After cloning it. the application's name is Echo. Its as 2 parts. Server and ech
 
 open the application in your visual studio code. then open terminal. it will show a path like -> F:\your path name\Echo
 then cd to server -> cd server. it will show F:\your path name\Echo\server>
-here give the commands - 
-  npm init -y
-  npm i express mongoose nodemon
-  npm i jsonwebtoken
-  npm i cors
-  npm i socket.io
+here give the commands - \n
+  npm init -y \n
+  npm i express mongoose nodemon \n
+  npm i jsonwebtoken \n
+  npm i cors \n
+  npm i socket.io \n
 
-now to run the server use command.
-  npm run dev 
+now to run the server use command. \n
+  npm run dev \n
 
 now in the similar way  omen another terminal and cd to echo-client -> cd echo-client
-it will show F:\your path name\Echo\echo-client>
+it will show F:\your path name\Echo\echo-client> \n
 
-use command
-  npm install
-  npm install mongodb-client
-  npm install socket-io-client
+use command\n
+  npm install \n
+  npm install mongodb-client \n 
+  npm install socket-io-client\n\n
 
 now to run the echo-client(front-end) use command.
   npm run start 
