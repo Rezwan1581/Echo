@@ -9,20 +9,20 @@ How to Install Node.js and NPM on Windows?
 
 Step 1: Download the Installer
 Download the Windows Installer from NodeJs official website (https://nodejs.org/en/download). Make sure you have downloaded the latest version of NodeJs. It includes the NPM package manager.
-Here, we are choosing the 64-bit version of the Node.js installer. The LTS (Long-term Support) version is highly recommended for you. After the download of the installer package, install it with a double-click on it. Now .msi file will be downloaded to your browser. Choose the desired location for that.
+Here, we are choosing the 64-bit version of the Node.js installer. The LTS (Long-term Support) version is highly recommended for you. After the download of the installer package, install it with a double-click on it. Now .msi file will be downloaded to your browser. Choose the desired location for that. <br>
 
 Step 2: Install Node.js and NPM
 just click next and next (by default), and thing will get downloaded.
 The following features will be installed by default:
-    Node.js runtime \n
-    Npm package manager \n
-    Online documentation shortcuts\n
-    Add to Path\n
+    Node.js runtime <br>
+    Npm package manager <br>
+    Online documentation shortcuts <br>
+    Add to Path <br>
 
 Step 3: Check Node.js and NPM Version
-If you have a doubt whether you have installed everything correctly or not, let’s verify it with “Command Prompt”.
-To confirm Node installation, type node -v command.
-To confirm NPM installation, type npm -v command.
+If you have a doubt whether you have installed everything correctly or not, let’s verify it with “Command Prompt”. <br>
+To confirm Node installation, type node -v command. <br>
+To confirm NPM installation, type npm -v command. <br>
 
 Now if you want to run this code Just clone it.
 
@@ -30,12 +30,13 @@ After cloning it. the application's name is Echo. Its as 2 parts. Server and ech
 
 open the application in your visual studio code. then open terminal. it will show a path like -> F:\your path name\Echo
 then cd to server -> cd server. it will show F:\your path name\Echo\server>
-here give the commands - \n
-  npm init -y \n
-  npm i express mongoose nodemon \n
-  npm i jsonwebtoken \n
-  npm i cors \n
-  npm i socket.io \n
+<br>
+here give the commands - <br>
+  npm init -y <br>
+  npm i express mongoose nodemon <br>
+  npm i jsonwebtoken <br>
+  npm i cors <br>
+  npm i socket.io <br>
 
 now to run the server use command. \n
   npm run dev \n
