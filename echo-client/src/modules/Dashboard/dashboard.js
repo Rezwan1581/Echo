@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Avatar from '../../assets/avatar2.png'
 import Input from "../../components/Input/input"
 import { io } from 'socket.io-client'
@@ -29,8 +29,7 @@ const Dashboard = () => {
     const [selectedConversation, setSelectedConversation] = useState(null);
 
     const [socket, setSocket] = useState(null)
-
-
+    const messageRef = useRef(null)
 
     useEffect(() => {
         setSocket(io('http://localhost:8080'))
@@ -50,9 +49,9 @@ const Dashboard = () => {
         })
     }, [socket])
 
-    useEffect(() => {
-        messageRef?.current?.scrollIntoView({ behavior: 'smooth' })
-    }, [messages?.messages])
+    // useEffect(() => {
+    //     messageRef?.current?.scrollIntoView({ behavior: 'smooth' })
+    // }, [messages?.messages])
 
 
     useEffect(() => {
@@ -268,14 +267,14 @@ const Dashboard = () => {
                                 messages.messages.map(({ message, user: { id } = {} }) => {
                                     return (
 
-                                        <>
-                                            <div className={`w- auto max-w-[45%] rounded-b-2xl p-4 mt-6 ${id === user?.id ?
-                                                ' bg-lightText ml-auto text-right rounded-tl-2xl' : ' bg-accent rounded-tr-2xl  mr-auto text-left'
-                                                }`}>
-                                                {message}
-                                            </div>
-                                            <div ref={messageRef}></div>
-                                        </>
+
+                                        <div className={`w- auto max-w-[45%] rounded-b-2xl p-4 mt-6 ${id === user?.id ?
+                                            ' bg-lightText ml-auto text-right rounded-tl-2xl' : ' bg-accent rounded-tr-2xl  mr-auto text-left'
+                                            }`}>
+                                            {message}
+                                        </div>
+                                        // {/* <div ref={messageRef}></div> */}
+
                                     )
                                 }) : <div className='text-center text-lg font-semibold mt-24 '>No Message</div>
 
