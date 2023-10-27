@@ -28,7 +28,7 @@ Now if you want to run this code Just clone it.
 
 After cloning it. the application's name is Echo. Its as 2 parts. Server and echo-client. Now in both places  you need to install some packages.
 
-open the application in your visual studio code. then open terminal. it will show a path like -> F:\your path name\Echo
+open the application in your visual studio code. then open terminal. it will show a path like -> F:\your path name\Echo <br>
 then cd to server -> cd server. it will show F:\your path name\Echo\server>
 <br>
 here give the commands - <br>
@@ -38,18 +38,18 @@ here give the commands - <br>
   npm i cors <br>
   npm i socket.io <br>
 
-now to run the server use command. \n
-  npm run dev \n
+now to run the server use command. <br>
+  npm run dev <br>
 
-now in the similar way  omen another terminal and cd to echo-client -> cd echo-client
-it will show F:\your path name\Echo\echo-client> \n
+now in the similar way  omen another terminal and cd to echo-client -> cd echo-client <br>
+it will show F:\your path name\Echo\echo-client> <br>
 
-use command\n
-  npm install \n
-  npm install mongodb-client \n 
-  npm install socket-io-client\n\n
+use command<br>
+  npm install <br>
+  npm install mongodb-client <br>
+  npm install socket-io-client <br>
 
-now to run the echo-client(front-end) use command.
+now to run the echo-client(front-end) use command. <br>
   npm run start 
 
 
