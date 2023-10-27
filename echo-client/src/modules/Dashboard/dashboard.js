@@ -51,6 +51,11 @@ const Dashboard = () => {
     }, [socket])
 
     useEffect(() => {
+        messageRef?.current?.scrollIntoView({ behavior: 'smooth' })
+    }, [messages?.messages])
+
+
+    useEffect(() => {
         const loggedInUser = JSON.parse(localStorage.getItem('user:detail'))
         const fetchConversations = async () => {
             const res = await fetch(`http://localhost:8000/api/conversations/${loggedInUser?.id}`, {
@@ -262,11 +267,15 @@ const Dashboard = () => {
                             messages?.messages?.length > 0 ?
                                 messages.messages.map(({ message, user: { id } = {} }) => {
                                     return (
-                                        <div className={`w- auto max-w-[45%] rounded-b-2xl p-4 mt-6 ${id === user?.id ?
-                                            ' bg-lightText ml-auto text-right rounded-tl-2xl' : ' bg-accent rounded-tr-2xl  mr-auto text-left'
-                                            }`}>
-                                            {message}
-                                        </div>
+
+                                        <>
+                                            <div className={`w- auto max-w-[45%] rounded-b-2xl p-4 mt-6 ${id === user?.id ?
+                                                ' bg-lightText ml-auto text-right rounded-tl-2xl' : ' bg-accent rounded-tr-2xl  mr-auto text-left'
+                                                }`}>
+                                                {message}
+                                            </div>
+                                            <div ref={messageRef}></div>
+                                        </>
                                     )
                                 }) : <div className='text-center text-lg font-semibold mt-24 '>No Message</div>
 

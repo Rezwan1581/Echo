@@ -52,7 +52,7 @@ io.on('connection', socket => {
                 message,
                 conversationId,
                 receiverId,
-                user: { id: user._id, fullName: user.fullName, email: user.email }
+                user: { id: user._id, firstName: user.firstName, lastName: user.lastName, email: user.email }
             });
         } else {
             // we have to io methods 1 is broadcast and one is "to" - to send message to multiple users use broadcast. and if you want to send
@@ -62,7 +62,7 @@ io.on('connection', socket => {
                 message,
                 conversationId,
                 receiverId,
-                user: { id: user._id, fullName: user.fullName, email: user.email }
+                user: { id: user._id, firstName: user.firstName, lastName: user.lastName, email: user.email }
             });
         }
     });
