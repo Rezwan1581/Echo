@@ -72,7 +72,7 @@ Dashboard
 Both way chatting
 ![both](https://github.com/Rezwan1581/Echo/assets/47502722/7262d8a9-4817-4304-9973-7cfda998e96c)
 
-(SignIn.PNG)
+![Sign in Page](SignIn.PNG)
 
 
 
