@@ -57,7 +57,7 @@ now to run the echo-client(front-end) use command. <br>
 
 # Project Screenshots
 <br>
-![Sign In Page](SignIn.PNG)
+
 <br>
 <br>
 ![Sign up page](SignUP.PNG)
@@ -68,7 +68,7 @@ now to run the echo-client(front-end) use command. <br>
 <br>
 ![Both way chatting]()
 
-
+![Sign In Page](SignIn.PNG)
 
 
 
