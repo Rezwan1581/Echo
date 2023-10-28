@@ -56,19 +56,19 @@ now to run the echo-client(front-end) use command. <br>
 
 
 # Project Screenshots
-<br>
 
-<br>
-<br>
-![Sign up page](SignUP.PNG)
-<br>
-<br>
-![Dashboard]()
-<br>
-<br>
-![Both way chatting]()
-
+Sign In Page
 ![Sign In Page](SignIn.PNG)
+
+Sign Up Page
+![Sign up page](SignuP.PNG)
+
+Dashboard
+![Dashboard](dashboard.PNG)
+
+Dual Channel chatting
+![Both](both.PNG)
+
 
 
 
