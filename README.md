@@ -61,7 +61,7 @@ Sign In Page
 ![Sign In Page](SignIn.PNG)
 
 Sign Up Page
-![Sign up page](SignuP.PNG)
+![Sign up page](Signup.PNG)
 
 Dashboard
 ![Dashboard](dashboard.PNG)
