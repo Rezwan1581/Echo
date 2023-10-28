@@ -57,22 +57,18 @@ now to run the echo-client(front-end) use command. <br>
 
 # Project Screenshots
 <br>
-Sign In Page
-![SignIn](https://github.com/Rezwan1581/Echo/assets/47502722/afc485ba-6dca-414a-9768-88e57a524b37)
+![Sign In Page](SignIn.PNG)
 <br>
 <br>
-Sign up page
-![Signup](https://github.com/Rezwan1581/Echo/assets/47502722/7d872889-4256-4c81-af6f-2a3e58676c8c)
+![Sign up page](SignUP.PNG)
 <br>
 <br>
-Dashboard
-![dashboard](https://github.com/Rezwan1581/Echo/assets/47502722/b8053300-f3b4-490e-b4ed-0a014d52671a)
+![Dashboard]()
 <br>
 <br>
-Both way chatting
-![both](https://github.com/Rezwan1581/Echo/assets/47502722/7262d8a9-4817-4304-9973-7cfda998e96c)
+![Both way chatting]()
 
-![Sign in Page](SignIn.PNG)
+
 
 
 
